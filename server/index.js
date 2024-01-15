@@ -8,9 +8,9 @@ require("dotenv").config()
 app.use(express.json());
 app.use(cors());
 
-CRUD 
-
-app.get("/", (req, res) )
+app.get("/", (req, res) => {
+    res.send ("Sign In app APIs..")
+});
 
 const port = process.env.PORT || 5001; 
 const uri = process.env.ATLAS_URI; 
