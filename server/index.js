@@ -1,14 +1,17 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const userRoute = require("./Routes/userRouter");
+
 
 const app = express();
 require("dotenv").config()
 
 app.use(express.json());
 app.use(cors());
+app.use("/api/users", userRoute);
 
-app.get("/", (req, res) => {
+app.post("/", (req, res) => {
     res.send ("Sign In app APIs..")
 });
 
