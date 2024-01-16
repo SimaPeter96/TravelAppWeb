@@ -8,9 +8,10 @@ const userSchema = new mongoose.Schema(
         required: true, 
         minlength: 3,
         maxlength: 200, 
-        unqiue: true
+        unique:true,
     },
     password: {type: String, required: true, minlength: 3, maxlength: 1024 },
+    confirmPassword: {type: String, required: true, minlength: 3, maxlength: 1024 },
 },
 {
     timestamps: true,
@@ -19,4 +20,4 @@ const userSchema = new mongoose.Schema(
 
 const userModel = mongoose.model("User", userSchema)
 
-module.exports = model("User", userSchema);
+module.exports = userModel;
