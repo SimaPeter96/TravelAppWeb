@@ -62,7 +62,36 @@ const loginUser = async (req, res) => {
         const token = createToken(user._id);
     
         res.status(200).json({_id: user._id, name: user.name, email, token });
-  } catch(error){}
+  } catch(error){
+    console.log(error)
+    res.status(500).json(error);
+  }
 };
 
-module.exports = { registerUser, loginUser };
+const findUser = async(req, res) => {
+    const userId = req.params.userId;
+    try{
+        const user = await userModel.findById(userId);
+
+        res.status(200).json(user);
+    }catch(error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+};
+
+const getUsers = async(req, res) => {
+    
+    try{
+        const user = await userModel.find(userId);
+
+        res.status(200).json(user);
+    }catch(error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+};
+
+
+
+module.exports = { registerUser, loginUser, findUser, getUsers};
