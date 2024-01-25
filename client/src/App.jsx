@@ -1,8 +1,8 @@
 import React from 'react'
-import Login from './Components/Login';
-import { Outlet, Navigate, Route, Routes, useLocation}  from 'react-router-dom'
-import Landing from './Components/Landing';
-import SignUp from './Components/SignUp';
+import Login from './Componets/Login';
+import { Outlet, Navigate, Route, Routes, useLocation}  from 'react-router-dom';
+import Landing from './Componets/Landing';
+import SignUp from './Componets/SignUp';
 
 function Layout(){
   const user = null;
