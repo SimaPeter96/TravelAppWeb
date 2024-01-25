@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import ImgBg from '../Images/wineImg.jpg'
-import Img from '../Images/blueBg.png'
-import google from '../assets/google.svg'
+import React, { useState } from 'react';
+import ImgBg from '../Componets/Images/wineImg.jpg';
+import Img from '../Componets/Images/blueBg.png';
+import google from '../assets/google.svg';
 
 
 function SignUp() {

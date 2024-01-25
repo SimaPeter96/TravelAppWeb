@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import BgImg1 from '../Images/BgImage.png';
-import Bokaap from '../Images/BokaapImg.jpg';
+import BgImg1 from '../Componets/Images/BgImage.png';
+import Bokaap from '../Componets/Images/BokaapImg.jpg';
 import google from '../assets/google.svg';
 
 
