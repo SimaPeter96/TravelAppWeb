@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+@layer base {
+  html {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply font-[Poppins]
+  }
+
+  button{
+    
+    @apply px-5 py-2.5 
+  }
+
+  h1{
+    @apply text-transparent text-lg;
+    @apply bg-transparent;
+    -webkit-background-clip: text;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+   
+
+
+
+}
+
+  
+  
