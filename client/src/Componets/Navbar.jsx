@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../Componets/Images/TravelAppLogo.png';
-import  { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -9,13 +9,16 @@ function Navbar() {
         <img src={Logo} className="logo" alt='logo' style={{ width: '80px' }} />
       </div>
       <div className='flex space-x-6 mr-12 pb-1'>
-      <Link to='/login' className='hover:bg-amber-600	 rounded-md'>
-        <button className='text-white bg-transparent border-2 shadow-md h-9 w-50 border-slate-100 rounded-md text-xs' >LOGIN</button>
+        <Link to='/login' className='hover:bg-amber-600 rounded-md'>
+          <button className='text-white bg-transparent border-2 border-slate-100 rounded-md px-4 py-2 text-xs hover:bg-amber-600 focus:outline-none focus:ring focus:border-blue-300 transition duration-300'>
+            LOGIN
+          </button>
         </Link>
-        <Link to='/signUp' className='hover:bg-transparent'> 
-        <button className='text-white border-slate-100 bg-amber-600 rounded-md shadow-md h-9 text-xs'>SIGN UP</button>
+        <Link to='/signUp' className='hover:bg-transparent'>
+          <button className='text-white bg-amber-600 rounded-md px-4 py-2 text-xs hover:bg-transparent focus:outline-none focus:ring focus:border-blue-300 transition duration-300'>
+            SIGN UP
+          </button>
         </Link>
-        
       </div>
     </div>
   );
