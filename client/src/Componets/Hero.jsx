@@ -13,10 +13,10 @@ function Hero() {
           </p>
         </div>
         <div className="flex space-x-4 mt-10">
-          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm">EXPLORE</button>
-          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm">RESTAURANTS</button>
-          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm">WINE FARMS</button>
-          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm">ACTIVITIES</button>
+          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm hover:bg-transparent focus:outline-none focus:ring focus:border-blue-300 transition duration-300">EXPLORE</button>
+          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm hover:bg-transparent focus:outline-none focus:ring focus:border-blue-300 transition duration-300">RESTAURANTS</button>
+          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm hover:bg-transparent focus:outline-none focus:ring focus:border-blue-300 transition duration-300">WINE FARMS</button>
+          <button className="px-4 py-2 bg-amber-600 text-white shadow-lg rounded-xl text-sm hover:bg-transparent focus:outline-none focus:ring focus:border-blue-300 transition duration-300">ACTIVITIES</button>
         </div>
       </div>
     </div>
